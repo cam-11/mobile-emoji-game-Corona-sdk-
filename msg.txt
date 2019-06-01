@@ -1,0 +1,47 @@
+<html>
+<script type="text/javascript" charset="utf-8" id="zm-extension" src="chrome-extension://fdcgdnkidjaadafnichfpabhfomcebme/scripts/webrtc-patch.js" async=""></script><head><style id="stndz-style">div[class*="item-container-obpd"], a[data-redirect*="paid.outbrain.com"], a[onmousedown*="paid.outbrain.com"] { display: none !important; } a div[class*="item-container-ad"] { height: 0px !important; overflow: hidden !important; position: absolute !important; } div[data-item-syndicated="true"] { display: none !important; } .grv_is_sponsored { display: none !important; } .zergnet-widget-related { display: none !important; } </style>
+    <title>A super awesome FCM proof of concept</title>
+  </head>
+  <body>
+    <h2>The Messenger Server</h2>
+This is a server for sending Squawks. You can either directly message a single phone, or send a message to all devices following certain instructors.
+
+<h3>Squawk to a Single Device</h3>
+
+
+<form method="post" action="/dm">
+  Enter your server key
+  <br>
+  <input type="test" name="serverKey"><br>
+  <br>
+  Enter the ID token of the phone to send a random Squawk to
+  <br>
+  <input type="test" name="clientApiKey"><br>
+  <br>
+  <input type="submit" value="Send Squawk">
+</form>
+
+<h3>Instructor Squawk</h3>
+<form method="post" action="/cd">
+  Enter your server key
+  <br>
+  <input type="test" name="serverKey">
+  <br>
+  <br>
+  Choose which instructor to generate a test Squawk for. Use this for testing topic messages.
+  <br>
+  <br>
+  <input type="radio" name="groupCD" value="key_asser"> Asser<br>
+  <input type="radio" name="groupCD" value="key_cezanne"> Cezanne<br>
+  <input type="radio" name="groupCD" value="key_jlin"> Jessica<br>
+  <input type="radio" name="groupCD" value="key_lyla"> Lyla<br>
+  <input type="radio" name="groupCD" value="key_nikita"> Nikita<br>
+  <input type="radio" name="groupCD" value="key_random" checked=""> Random<br>
+  <br>
+  <input type="submit" value="Send Squawk">
+</form>
+
+  
+
+</body>
+</html>
